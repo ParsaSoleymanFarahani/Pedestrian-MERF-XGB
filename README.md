@@ -87,5 +87,5 @@ The notebook contains sections that walk you through:
 If you use this code or methodology in your research, please cite our paper:
 
 ```text
-Soleimani, P., et al. (2026). "Improving Network Level Pedestrian Activity Prediction by Accounting for Spatial and Longitudinal Clustering in Crowdsourced Data". Journal of Active Transportation / Journal Name.
+Farahani, P. S, et al. (2026). "Improving Network Level Pedestrian Activity Prediction by Accounting for Spatial and Longitudinal Clustering in Crowdsourced Data". https://doi.org/10.21203/rs.3.rs-8715658/v1
 ```
