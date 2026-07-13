@@ -9,7 +9,7 @@ def generate_synthetic_data(output_path):
     # 1. Generate clustering levels
     cities = ['detroit', 'ann-arbor', 'flint', 'novi', 'stockbridge']
     city_weights = [116/199, 58/199, 15/199, 9/199, 1/199]
-    weathercty = np.random.choice(cities, size=n_samples, p=city_weights)
+    location = np.random.choice(cities, size=n_samples, p=city_weights)
 
     years = [2019, 2020, 2021, 2022]
     year_weights = [55/199, 66/199, 62/199, 16/199]
@@ -72,7 +72,7 @@ def generate_synthetic_data(output_path):
         + 8.0 * bik_pct 
         + 0.04 * hh_den
         - 1.2 * afam
-        + np.array([city_effects[c] for c in weathercty])
+        + np.array([city_effects[c] for c in location])
         + np.array([year_effects[y] for y in year])
         + np.random.normal(loc=0.0, scale=35.0, size=n_samples)
     )
@@ -81,7 +81,7 @@ def generate_synthetic_data(output_path):
 
     # 5. Create DataFrame
     df = pd.DataFrame({
-        'weathercty': weathercty,
+        'location': location,
         'Year': year,
         'Strava_MADT': strava_madt,
         'bik_den': bik_den,
