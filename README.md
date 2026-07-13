@@ -44,7 +44,7 @@ To ensure complete reproducibility and allow others to build upon our methods, w
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/Pedestrian-MERF-XGB.git
+   git clone https://https://github.com/ParsaSoleymanFarahani/Pedestrian-MERF-XGB.git
    cd Pedestrian-MERF-XGB
    ```
 
